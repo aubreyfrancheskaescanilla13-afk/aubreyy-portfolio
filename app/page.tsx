@@ -1186,9 +1186,9 @@ export default function Home() {
 
             <div className="experience-list">
               <div className="experience-item">
-                <span>1Y</span>
+                <span>2026</span>
                 <div>
-                  <h3>Tech Experience</h3>
+                  <h3>Information Engineer / Programmer</h3>
                   <p>
                     Developed and maintained internal applications, worked
                     with web technologies, handled system troubleshooting,
@@ -1199,9 +1199,9 @@ export default function Home() {
               </div>
 
               <div className="experience-item">
-                <span>1Y</span>
+                <span>2026</span>
                 <div>
-                  <h3>Tech Experience</h3>
+                  <h3>Web and UI/UX Designer</h3>
                   <p>
                     Designed websites, digital layouts, user interfaces,
                     and creative assets using Figma, Canva, WordPress, and
@@ -1211,9 +1211,9 @@ export default function Home() {
               </div>
 
               <div className="experience-item">
-                <span>1Y</span>
+                <span>2025</span>
                 <div>
-                  <h3>Tech Experience</h3>
+                  <h3>Technical Support</h3>
                   <p>
                     Provided technical support to users, assisted with
                     hardware and software troubleshooting, helped resolve
