@@ -3847,3 +3847,217 @@ img {
     font-size: 13px;
   }
 }
+
+/* RESPONSIVE OVERRIDES FOR THE CURRENT PAGE LAYOUTS */
+@media (max-width: 900px) {
+  .navbar {
+    height: 65px;
+  }
+
+  .nav-container {
+    width: calc(100% - 40px);
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px 18px;
+    border: 1px solid var(--line);
+    background: rgba(12, 12, 13, 0.98);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 11px;
+  }
+
+  .nav-links a:last-child {
+    border-bottom: 0;
+  }
+
+  .light-mode .nav-links {
+    background: rgba(247, 245, 247, 0.99);
+  }
+
+  .nav-actions {
+    margin-left: auto;
+  }
+
+  .menu-button {
+    display: block;
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  .contact-section {
+    padding: 70px 0;
+  }
+
+  .contact-shell {
+    width: calc(100% - 48px);
+    padding: 30px 24px;
+    border-radius: 24px;
+  }
+
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 34px;
+  }
+
+  .contact-left {
+    padding: 0;
+  }
+
+  .contact-right {
+    padding: 0;
+  }
+
+  .contact-left h2 {
+    max-width: 620px;
+    font-size: clamp(34px, 6vw, 50px);
+    line-height: 1.05;
+    letter-spacing: -1.8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    width: calc(100% - 36px);
+  }
+
+  .about-container,
+  .section,
+  .site-footer {
+    width: calc(100% - 36px);
+  }
+
+  .hero-stats {
+    gap: 12px;
+  }
+
+  .hero-stats span {
+    font-size: 7px;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+  }
+
+  .experience-item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .experience-item h3 {
+    font-size: 17px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  .experience-item p {
+    font-size: 12px;
+  }
+
+  .contact-section {
+    padding: 48px 0;
+  }
+
+  .contact-shell {
+    width: calc(100% - 32px);
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .contact-layout {
+    gap: 28px;
+  }
+
+  .contact-kicker {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .contact-left h2 {
+    font-size: clamp(30px, 8vw, 42px);
+    letter-spacing: -1.3px;
+  }
+
+  .contact-intro {
+    font-size: 13px;
+  }
+
+  .contact-detail {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .contact-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .contact-form-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-submit {
+    width: 100%;
+  }
+
+  .footer-bar,
+  .footer-meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .footer-nav {
+    gap: 14px;
+  }
+
+  .footer-meta {
+    justify-content: center;
+    padding: 14px 18px;
+  }
+
+  .footer-meta span:last-child {
+    text-align: left;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-role {
+    gap: 9px;
+  }
+
+  .typing-role {
+    min-width: 0;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-stats div:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .about-photo {
+    height: min(430px, 115vw);
+  }
+
+  .experience-item {
+    padding: 24px 0;
+  }
+}
